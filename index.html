@@ -125,7 +125,38 @@ z-index:2;
 
 
 
+.sho2{
+background-color: #D89B5E;
+position: relative;
+top: 240px;
+display: none;
+opacity: 0.7;
+left: 540px;
+color: black;
+width: 300px;
+height: 300px;
 
+border-radius: 5%;
+z-index:2;
+}
+
+.buttonn3{
+position: relative;
+top:140px;
+left: 30px;
+opacity: 1.0;
+height: 30px;
+
+}
+
+.buttonn4{
+position: relative;
+top:140px;
+left: 20px;
+opacity: 1.0;
+height: 30px;
+
+}
 
 path {
     fill-opacity: 0;
@@ -200,6 +231,19 @@ text-shadow:2px 2px 2px black;
 	
 
 </div>
+
+<div class="sho2">
+	
+	
+<p class="insid" >
+	game over
+	<button class="buttonn4 btn btn-danger">exit</button>
+	<button class="buttonn3 btn btn-info">play again</button>
+	</p>
+	
+
+</div>
+
 
 
 <div class=" b "  tabindex="0">
@@ -860,9 +904,22 @@ function(){
   gee();
 });*/
 //dont know why swal is not working on gh pages
-alert("game over");
+$(".sho2").slideToggle();
+$(".buttonn3").click(function(){
+
+$(".sho2").hide();
 gee();
 
+
+});
+
+$(".buttonn4").click(function(){
+
+$(".sho2").hide();
+
+
+
+});
 }
 
 }

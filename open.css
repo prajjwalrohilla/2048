@@ -1,0 +1,16 @@
+path {
+    fill-opacity: 0;
+    transition: fill-opacity 1s;
+  }
+
+
+#canvas{
+	position:absolute;
+
+left: 350px;
+font-size: 70px;
+font-family: cursive;
+color: #F5671B;
+text-shadow:2px 2px 2px black;
+
+}
